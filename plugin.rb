@@ -5,6 +5,9 @@
 
 enabled_site_setting :ldap_enabled
 
+require "bundler"
+Bundler.setup(:default)
+
 gem 'pyu-ruby-sasl', '0.0.3.3', require: false
 gem 'rubyntlm', '0.3.4', require: false
 gem 'net-ldap', '0.17.1'
